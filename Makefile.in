@@ -129,7 +129,7 @@ install: all
 	$(NQ) ' INSTALL ' $@
 	$(Q)mkdir -p $(DESTDIR)$(bindir)
 	$(Q)mkdir -p $(DESTDIR)$(docdir)/loadfiles
-	$(Q)(mkdir -p $(DESTDIR)$(mandir)/man1
+	$(Q)mkdir -p $(DESTDIR)$(mandir)/man1
 	$(Q)${INSTALLCMD} dbench $(DESTDIR)$(bindir)
 	$(Q)${INSTALLCMD} loadfiles/client.txt $(DESTDIR)$(docdir)/loadfiles
 	$(Q)${INSTALLCMD} loadfiles/nfs.txt $(DESTDIR)$(docdir)/loadfiles
